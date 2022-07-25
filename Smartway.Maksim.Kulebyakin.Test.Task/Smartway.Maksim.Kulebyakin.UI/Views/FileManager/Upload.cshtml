@@ -1,0 +1,62 @@
+﻿<script type="text/javascript">
+var countOfFiles = 1;
+    function add(){
+        $("#form").append("<div class='form-group' ><div class='col-md-10'></p><input id='files" + countOfFiles +"' type='file' multiple /></div></div><div><p class='action' id='action'>Action: </p></div>");
+        countOfFiles++;
+        console.log("countOfFiles = " + countOfFiles)
+    }
+    
+function addFiles() {
+    var url = $("#myForm").attr("action");
+
+    var formData = new FormData();
+
+    if (countOfFiles > 0) {
+        for (var i = 0; i < countOfFiles; i++) {
+            console.log("------")
+            formData.append("files", $("#files"+i)[0].files[0])
+            console.log(formData.getAll("files"+i))
+        }
+    }
+        
+    $.ajax({
+        url: url,
+        type: 'POST',
+        data: formData,
+        contentType: false,
+        processData: false,
+        success: function(result) {
+            var res = result;
+            if (res.status === "Error") {
+                $('#action').text("Result: Error");
+            }
+            else if (res.status === "Complete") {
+                $(".action").text("Result: Complete");
+            }
+        }
+    });
+    };
+</script>
+
+
+<form id="myForm" method="post" enctype="multipart/form-data" asp-controller="FileManager" asp-action="Upload">
+    <div id="form" class="form-group" >
+        <div class="col-md-10">
+            <p>Upload files using this form:</p>
+            <input id="files0" type="file" multiple />
+        </div>
+        <div>
+            <p class="action" id="action">
+                Action: 
+            </p>
+        </div>
+    </div>
+    <div class="form-group" >
+        <div class="col-md-10" style="padding: 15px 0px">
+            <button class="btn-info" type="button" onclick="add()">Add more file</button>
+        </div>
+        <div class="col-md-10" style="padding: 15px 0px">
+            <input onclick="addFiles()" type="button" value="Upload" />
+        </div>
+    </div>
+</form>

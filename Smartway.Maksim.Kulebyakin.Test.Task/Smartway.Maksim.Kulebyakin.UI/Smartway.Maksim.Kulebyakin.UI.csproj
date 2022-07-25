@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Smartway.Maksim.Kulebyakin.BLL\Smartway.Maksim.Kulebyakin.BLL.csproj" />
+    <ProjectReference Include="..\Smartway.Maksim.Kulebyakin.DAO\Smartway.Maksim.Kulebyakin.DAO.csproj" />
+    <ProjectReference Include="..\Smartway.Maksim.Kulebyakin.Entities\Smartway.Maksim.Kulebyakin.Entities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Files\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.jQuery.Unobtrusive.Ajax" Version="3.2.6" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.7" />
+  </ItemGroup>
+
+</Project>

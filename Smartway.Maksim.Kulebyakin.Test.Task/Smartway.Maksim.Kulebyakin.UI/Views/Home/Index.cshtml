@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <div>  
+        <p>
+            @Html.ActionLink("Download", "ShowAll", "FileManager")
+        </p>
+    </div>
+    <div>
+        <p>
+            @Html.ActionLink("Upload", "Upload", "FileManager")
+        </p>
+    </div>
+</div>

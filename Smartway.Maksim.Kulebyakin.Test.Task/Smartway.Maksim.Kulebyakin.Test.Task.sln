@@ -1,0 +1,83 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32519.379
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Smartway.Maksim.Kulebyakin.BLL", "Smartway.Maksim.Kulebyakin.BLL\Smartway.Maksim.Kulebyakin.BLL.csproj", "{30750D2D-490F-4085-9948-B64050CF2958}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BLL", "BLL", "{F9720D5B-DD6C-4B23-BAEE-2CBED499A27A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contracts", "Contracts", "{610B1A50-14AD-489B-B79A-752B0C49D6FE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Smartway.Maksim.Kulebyakin.CoreLogic.Contracts", "Smartway.Maksim.Kulebyakin.Contracts\Smartway.Maksim.Kulebyakin.CoreLogic.Contracts.csproj", "{B0E8DE76-016E-443B-8EB5-66D3A569248E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CoreLogic", "CoreLogic", "{7B85985A-3D6A-45E4-B47D-5366D4A1B779}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{90AB0332-A9D8-4A91-9EE4-C0247D18E167}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Smartway.Maksim.Kulebyakin.DAO", "Smartway.Maksim.Kulebyakin.DAO\Smartway.Maksim.Kulebyakin.DAO.csproj", "{14FB804A-C062-4512-9549-3E24DAB00B02}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataBaseHandlers", "DataBaseHandlers", "{5284287A-65CF-4C14-A182-FB64FEDB9F4F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contracts", "Contracts", "{3178015E-0EBE-4DBA-8E83-722FD27DA280}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Smartway.Maksim.Kulebyakin.DataBase.Contracts", "Smartway.Maksim.Kulebyakin.DataBase.Contracts\Smartway.Maksim.Kulebyakin.DataBase.Contracts.csproj", "{98338AE3-7AA4-4F76-8103-7AAA657DF009}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entities", "Entities", "{1CD7A5CB-29A3-477A-9A17-0BA3DAEC3000}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Smartway.Maksim.Kulebyakin.Entities", "Smartway.Maksim.Kulebyakin.Entities\Smartway.Maksim.Kulebyakin.Entities.csproj", "{8D107F25-1DD5-46CA-92FA-8C473CC50359}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PL", "PL", "{DE1BB895-C2A0-47D0-9B53-ED6A52CB8B69}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Smartway.Maksim.Kulebyakin.UI", "Smartway.Maksim.Kulebyakin.UI\Smartway.Maksim.Kulebyakin.UI.csproj", "{29C37AFB-C31C-4927-B7B6-C2AA0A029719}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30750D2D-490F-4085-9948-B64050CF2958}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30750D2D-490F-4085-9948-B64050CF2958}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30750D2D-490F-4085-9948-B64050CF2958}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30750D2D-490F-4085-9948-B64050CF2958}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0E8DE76-016E-443B-8EB5-66D3A569248E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0E8DE76-016E-443B-8EB5-66D3A569248E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0E8DE76-016E-443B-8EB5-66D3A569248E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0E8DE76-016E-443B-8EB5-66D3A569248E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14FB804A-C062-4512-9549-3E24DAB00B02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14FB804A-C062-4512-9549-3E24DAB00B02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14FB804A-C062-4512-9549-3E24DAB00B02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14FB804A-C062-4512-9549-3E24DAB00B02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98338AE3-7AA4-4F76-8103-7AAA657DF009}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98338AE3-7AA4-4F76-8103-7AAA657DF009}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98338AE3-7AA4-4F76-8103-7AAA657DF009}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98338AE3-7AA4-4F76-8103-7AAA657DF009}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D107F25-1DD5-46CA-92FA-8C473CC50359}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D107F25-1DD5-46CA-92FA-8C473CC50359}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D107F25-1DD5-46CA-92FA-8C473CC50359}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D107F25-1DD5-46CA-92FA-8C473CC50359}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29C37AFB-C31C-4927-B7B6-C2AA0A029719}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29C37AFB-C31C-4927-B7B6-C2AA0A029719}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29C37AFB-C31C-4927-B7B6-C2AA0A029719}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29C37AFB-C31C-4927-B7B6-C2AA0A029719}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{30750D2D-490F-4085-9948-B64050CF2958} = {7B85985A-3D6A-45E4-B47D-5366D4A1B779}
+		{610B1A50-14AD-489B-B79A-752B0C49D6FE} = {F9720D5B-DD6C-4B23-BAEE-2CBED499A27A}
+		{B0E8DE76-016E-443B-8EB5-66D3A569248E} = {610B1A50-14AD-489B-B79A-752B0C49D6FE}
+		{7B85985A-3D6A-45E4-B47D-5366D4A1B779} = {F9720D5B-DD6C-4B23-BAEE-2CBED499A27A}
+		{14FB804A-C062-4512-9549-3E24DAB00B02} = {5284287A-65CF-4C14-A182-FB64FEDB9F4F}
+		{5284287A-65CF-4C14-A182-FB64FEDB9F4F} = {90AB0332-A9D8-4A91-9EE4-C0247D18E167}
+		{3178015E-0EBE-4DBA-8E83-722FD27DA280} = {90AB0332-A9D8-4A91-9EE4-C0247D18E167}
+		{98338AE3-7AA4-4F76-8103-7AAA657DF009} = {3178015E-0EBE-4DBA-8E83-722FD27DA280}
+		{8D107F25-1DD5-46CA-92FA-8C473CC50359} = {1CD7A5CB-29A3-477A-9A17-0BA3DAEC3000}
+		{29C37AFB-C31C-4927-B7B6-C2AA0A029719} = {DE1BB895-C2A0-47D0-9B53-ED6A52CB8B69}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A467B0CF-9809-4EF3-A90C-A63EE9241803}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,68 @@
+﻿@model IEnumerable<Smartway.Maksim.Kulebyakin.Entities.FileModel>
+
+@{
+    ViewData["Title"] = "View";
+    int a = 0;
+}
+
+<script>
+    function generateRef(id) {
+        var copyText = window.location.origin + "/FileManager/Download/" + id;
+
+        var input = document.getElementById(id);
+
+        $('#' + id).val(copyText);
+
+        input.select();
+        document.execCommand("copy");
+
+        alert("Link was copied to buffer!")
+    }
+</script>
+
+<h1>View</h1>
+
+<h4>FileModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <table class="table">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.FileName)
+                    </th>
+                    <th></th>
+                </tr>
+            
+                @foreach (var model in @Model)
+                {
+                a = model.Id;
+                <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => model.Id)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => model.FileName)
+                        </td>                      
+                        <td id="download">
+                            @Html.ActionLink("Download", "Download", new { id=model.Id })
+                        </td>
+                        <td>
+                            <button onclick="generateRef(@a)">Generate</button>
+                            <input class="visually-hidden" id="@a" value="asd"/>
+                        </td>
+                    </tr>
+                }
+            </table>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" asp-controller="Home">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
